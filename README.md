@@ -21,16 +21,16 @@ The project structure is as follows:
 ├── README.md                # Project documentation                                                                                                                            
 ├── requirements.txt         # Project dependencies                                                                                                                             
                                                                                                                   
-3. Methods
-2.1 Data Preprocessing
+3. Methods                                                                                                                                                                      
+2.1 Data Preprocessing                                                                                                                                                          
 The dataset underwent rigorous preprocessing, including multiple imputation for handling missing data and normalization to standardize feature scales. These steps ensured the data was suitable for model training and evaluation.
-2.2 Feature Selection
+2.2 Feature Selection                                                                                                                                                           
 To enhance model performance, we employed several feature selection techniques:
 - K-Best: Selects features based on statistical tests.
 - LASSO: Uses L1 regularization to identify the most relevant features.
 - Mutual Information: Measures the dependency between features and the target variable.
 - Recursive Feature Elimination with Random Forest (RFE-RF): Iteratively removes the least important features based on Random Forest importance scores.
-2.3 Model Construction
+2.3 Model Construction                                                                                                                                                          
 We implemented and compared six supervised machine learning algorithms:
 - Logistic Regression (LR): A statistical method for binary classification, predicting the probability of an event.
 - Random Forest (RF): An ensemble method that aggregates predictions from multiple decision trees.
@@ -38,18 +38,18 @@ We implemented and compared six supervised machine learning algorithms:
 - Support Vector Machine (SVM): Effective for high-dimensional spaces, suitable for classification tasks.
 - Naive Bayes (NB): A probabilistic classifier based on Bayes' theorem with strong independence assumptions.
 - Multilayer Perceptron (MLP): A feedforward neural network for supervised learning tasks.
-2.4 Hyperparameter Optimization
+2.4 Hyperparameter Optimization                                                                                                                                                 
 Each model underwent hyperparameter tuning using five-fold grid search cross-validation. This process systematically explored hyperparameter combinations to identify the optimal configuration based on performance metrics.
-2.5 Model Evaluation
+2.5 Model Evaluation                                                                                                                                                            
 The final model selection was based on a comprehensive evaluation of the following metrics:
 - Brier Score: Measures the accuracy of predicted probabilities (lower values indicate better performance).
 - AUC-ROC: Evaluates the model's ability to distinguish between classes (higher values indicate better performance).
-3. Requirements
+3. Requirements                                                                                                                                                                 
 To run the code in this project, you need to install several required dependencies. The libraries and frameworks used in the project are listed in the `requirements.txt` file. You can install all dependencies by running the following command:
 ```bash
 pip install -r requirements.txt
 ```
-4. Usage
+4. Usage                                                                                                                                                                        
 Step 1: Data Preprocessing
 The folder contains scripts for preprocessing data. This step involves normalizing and imputing missing values. You need to run the following scripts:
 - In the folder, run the script for data normalization (`Data_Normalization/`).
