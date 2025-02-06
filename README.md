@@ -2,23 +2,25 @@ Prediction Model for Gastrointestinal Bleeding After Coronary Artery Bypass Graf
 1. Overview
 This repository contains code to develop a prediction model for gastrointestinal bleeding (GIB) following coronary artery bypass grafting (CABG). Using data from four hospitals and the Medical Information Mart for Intensive Care IV (MIMIC-IV), we constructed and compared various machine learning and deep learning algorithms to select the optimal model for identifying patients at higher risk of experiencing GIB after CABG. The goal of this project is to assist clinicians in making more informed decisions, reduce complications, and improve patient care by predicting the likelihood of GIB in patients post-surgery.
 The project structure is as follows:
-├── Data_Normalization/          # Data normalization
-├── Multiple_Imputation/         # Data imputation
-├── Sample_size/                 # Sample size analysis
-├── feature_selection/           # Feature selection scripts
-│   ├── K_Best/                 # K-Best feature selection
-│   ├── LASSO/                  # LASSO feature selection
-│   ├── Mutual_Information/     # Mutual information feature selection
-│   ├── RFE_RF/                 # Recursive Feature Elimination with Random Forest
-├── model_construction/          # Model construction scripts
-│   ├── Logistic_Regression/    # Logistic Regression
-│   ├── Multilayer_Perceptron/  # Multilayer Perceptron (MLP)
-│   ├── Naive_Bayes/            # Naive Bayes
-│   ├── Random_Forest/          # Random Forest
+├── data_preprocess/          # Data preprocessing scripts
+│   ├── Data_Normalization/  # Data normalization
+│   ├── Multiple_Imputation/ # Data imputation
+│   ├── Sample_size/         # Sample size analysis
+├── feature_selection/        # Feature selection scripts
+│   ├── K_Best/              # K-Best feature selection
+│   ├── LASSO/               # LASSO feature selection
+│   ├── Mutual_Information/  # Mutual information feature selection
+│   ├── RFE_RF/              # Recursive Feature Elimination with Random Forest
+├── model_construction/       # Model construction scripts
+│   ├── Logistic_Regression/ # Logistic Regression
+│   ├── Multilayer_Perceptron/ # Multilayer Perceptron (MLP)
+│   ├── Naive_Bayes/         # Naive Bayes
+│   ├── Random_Forest/       # Random Forest
 │   ├── Support_Vector_Machine/ # Support Vector Machine (SVM)
-│   ├── XGBoost/                # XGBoost
-├── README.md                   # Project documentation
-├── requirements.txt            # Project dependencies
+│   ├── XGBoost/             # XGBoost
+├── README.md                # Project documentation
+├── requirements.txt         # Project dependencies
+
 
 3. Methods
 2.1 Data Preprocessing
