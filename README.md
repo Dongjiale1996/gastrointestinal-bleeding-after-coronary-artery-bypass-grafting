@@ -8,8 +8,8 @@ The project structure is as follows:
 │   ├── Sample_size/         # Sample size analysis                                                                                                                             
 ├── feature_selection/        # Feature selection scripts                                                                                                                       
 │   ├── K_Best/              # K-Best feature selection                                                                                                                         
-│   ├── LASSO/               # LASSO feature selection
-│   ├── Mutual_Information/  # Mutual information feature selection                                                                                                             
+│   ├── LASSO/               # LASSO feature selection                                                                                                                          
+│   ├── Mutual_Information/  # Mutual information feature selection                                                                                                            
 │   ├── RFE_RF/              # Recursive Feature Elimination with Random Forest                                                                                                 
 ├── model_construction/       # Model construction scripts                                                                                                                      
 │   ├── Logistic_Regression/ # Logistic Regression                                                                                                                              
