@@ -5,23 +5,22 @@ The project structure is as follows:
 ├── data_preprocess/          # Data preprocessing scripts                                                                                                                      
 │   ├── Data_Normalization/  # Data normalization                                                                                                                               
 │   ├── Multiple_Imputation/ # Data imputation                                                                                                                                  
-│   ├── Sample_size/         # Sample size analysis 
-├── feature_selection/        # Feature selection scripts
-│   ├── K_Best/              # K-Best feature selection
+│   ├── Sample_size/         # Sample size analysis                                                                                                                             
+├── feature_selection/        # Feature selection scripts                                                                                                                       
+│   ├── K_Best/              # K-Best feature selection                                                                                                                         
 │   ├── LASSO/               # LASSO feature selection
-│   ├── Mutual_Information/  # Mutual information feature selection
-│   ├── RFE_RF/              # Recursive Feature Elimination with Random Forest
-├── model_construction/       # Model construction scripts
-│   ├── Logistic_Regression/ # Logistic Regression
-│   ├── Multilayer_Perceptron/ # Multilayer Perceptron (MLP)
-│   ├── Naive_Bayes/         # Naive Bayes
-│   ├── Random_Forest/       # Random Forest
-│   ├── Support_Vector_Machine/ # Support Vector Machine (SVM)
-│   ├── XGBoost/             # XGBoost
-├── README.md                # Project documentation
-├── requirements.txt         # Project dependencies
-
-
+│   ├── Mutual_Information/  # Mutual information feature selection                                                                                                             
+│   ├── RFE_RF/              # Recursive Feature Elimination with Random Forest                                                                                                 
+├── model_construction/       # Model construction scripts                                                                                                                      
+│   ├── Logistic_Regression/ # Logistic Regression                                                                                                                              
+│   ├── Multilayer_Perceptron/ # Multilayer Perceptron                                                                                                                          
+│   ├── Naive_Bayes/         # Naive Bayes                                                                                                                                      
+│   ├── Random_Forest/       # Random Forest                                                                                                                                    
+│   ├── Support_Vector_Machine/ # Support Vector Machine                                                                                                                        
+│   ├── XGBoost/             # XGBoost                                                                                                                                          
+├── README.md                # Project documentation                                                                                                                            
+├── requirements.txt         # Project dependencies                                                                                                                             
+                                                                                                                  
 3. Methods
 2.1 Data Preprocessing
 The dataset underwent rigorous preprocessing, including multiple imputation for handling missing data and normalization to standardize feature scales. These steps ensured the data was suitable for model training and evaluation.
