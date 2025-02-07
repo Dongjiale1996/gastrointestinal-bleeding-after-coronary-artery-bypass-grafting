@@ -24,12 +24,14 @@ The project structure is as follows:
 3. Methods                                                                                                                                                                      
 2.1 Data Preprocessing                                                                                                                                 
 The dataset underwent rigorous preprocessing, including multiple imputation for handling missing data and normalization to standardize feature scales. These steps ensured the data was suitable for model training and evaluation.
+
 2.2 Feature Selection                                                                                                                                  
 To enhance model performance, we employed several feature selection techniques:
 - K-Best: Selects features based on statistical tests.
 - LASSO: Uses L1 regularization to identify the most relevant features.
 - Mutual Information (MI): Measures the dependency between features and the target variable.
 - Recursive Feature Elimination with Random Forest (RFE-RF): Iteratively removes the least important features based on Random Forest importance scores.
+
 2.3 Model Construction                                                                                                                                 
 We implemented and compared six supervised machine learning algorithms:
 - Logistic Regression (LR): A statistical method for binary classification, predicting the probability of an event.
@@ -38,8 +40,10 @@ We implemented and compared six supervised machine learning algorithms:
 - Support Vector Machine (SVM): Effective for high-dimensional spaces, suitable for classification tasks.
 - Naive Bayes (NB): A probabilistic classifier based on Bayes' theorem with strong independence assumptions.
 - Multilayer Perceptron (MLP): A feedforward neural network for supervised learning tasks.
+
 2.4 Hyperparameter Optimization                                                                                                                        
 Each model underwent hyperparameter tuning using five-fold grid search cross-validation. This process systematically explored hyperparameter combinations to identify the optimal configuration based on performance metrics.
+
 2.5 Model Evaluation                                                                                                                                   
 The final model selection was based on a comprehensive evaluation of the following metrics:
 - Brier Score: Measures the accuracy of predicted probabilities (lower values indicate better performance).
