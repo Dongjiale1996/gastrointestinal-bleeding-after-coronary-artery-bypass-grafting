@@ -46,18 +46,18 @@ The final model selection was based on a comprehensive evaluation of the followi
 - AUC-ROC: Evaluates the model's ability to distinguish between classes (higher values indicate better performance).
 3. Requirements                                                                                                                                                                 
 To run the code in this project, you need to install several required dependencies. The libraries and frameworks used in the project are listed in the requirements.txt file. You can install all dependencies by running the following command:
-pip install scikit-learn==1.0.2
-pip install pandas==1.3.5
-pip install matplotlib==3.5.3
-pip install numpy==1.21.6
-pip install keras==2.3.1
-pip install tensorflow==2.2.0
-pip install imbalanced-learn==0.10.1
-pip install scipy==1.4.1
-pip install xgboost==1.6.2
-pip install joblib==1.2.0
-pip install seaborn==0.12.2
-pip install scikit-learn-intelex==2023.2.1
+pip install scikit-learn==1.0.2; 
+pip install pandas==1.3.5; 
+pip install matplotlib==3.5.3; 
+pip install numpy==1.21.6; 
+pip install keras==2.3.1; 
+pip install tensorflow==2.2.0; 
+pip install imbalanced-learn==0.10.1; 
+pip install scipy==1.4.1; 
+pip install xgboost==1.6.2; 
+pip install joblib==1.2.0; 
+pip install seaborn==0.12.2; 
+pip install scikit-learn-intelex==2023.2.1; 
 pip install sklearnex==0.0.1
 4. Usage                                                                                                                                                                        
 Step 1: Data Preprocessing
