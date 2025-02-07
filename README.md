@@ -24,7 +24,7 @@ The project structure is as follows:
 3. Methods                                                                                                                                                                      
 2.1 Data Preprocessing                                                                                                                                                          
 The dataset underwent rigorous preprocessing, including multiple imputation for handling missing data and normalization to standardize feature scales. These steps ensured the data was suitable for model training and evaluation.
-2.2 Feature Selection                                                                                                                                                           
+2.2 Feature Selection                                                                                                                                                                                                                                                                                         
 To enhance model performance, we employed several feature selection techniques:
 - K-Best: Selects features based on statistical tests.
 - LASSO: Uses L1 regularization to identify the most relevant features.
@@ -62,25 +62,23 @@ pip install sklearnex==0.0.1
 4. Usage
 Step 1: Data Preprocessing                                                                                  
 The folder contains scripts for data preprocessing, including normalization and imputing missing values. Run the appropriate scripts for data normalization and imputing missing values.
-Example:
-Navigate to the folder:
-cd data_preprocess/  
-Run the relevant script, such as:
-python data_normalization.py  
-Step 2: Feature Selection                                                                                  
-The folder contains scripts for various feature selection methods aimed at reducing model complexity and enhancing performance by retaining only the most relevant features. You can run the scripts to apply the following methods: K-Best method, LASSO method, mutual information-based selection, and Recursive Feature Elimination with Random Forest.
-Example:
-Navigate to the folder:
-cd feature_selection/  
-Run the script to select the most important features, such as:
-python k_best.py  
-Step 3: Model Construction                                                                                  
-The folder contains scripts to train and evaluate various prediction models. You can choose from machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each model has a corresponding training script.
-Example:
-Navigate to the folder:
-cd model_construction/  
-Run the corresponding script for the desired model, such as:
-python train_logistic_regression.py  
+Example:                                                                                                                                               
+Navigate to the folder:                                                                                                                                
+cd data_preprocess/                                                                                                                                    
+Run the relevant script, such as:                                                                                                                      
+python data_normalization.py                                                                                                                           
+Step 2: Feature Selection                                                                                                                              The folder contains scripts for various feature selection methods aimed at reducing model complexity and enhancing performance by retaining only the most relevant features. You can run the scripts to apply the following methods: K-Best method, LASSO method, mutual information-based selection, and Recursive Feature Elimination with Random Forest.
+Example:                                                                                                                                               
+Navigate to the folder:                                                                                                                                
+cd feature_selection/                                                                                                                                  
+Run the script to select the most important features, such as:                                                                                         
+python k_best.py                                                                                                                                       
+Step 3: Model Construction                                                                                                                             The folder contains scripts to train and evaluate various prediction models. You can choose from machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each model has a corresponding training script.
+Example:                                                                                                                                               
+Navigate to the folder:                                                                                                                                
+cd model_construction/                                                                                                                                 
+Run the corresponding script for the desired model, such as:                                                                                           
+python train_logistic_regression.py                                                                                                                    
 5. Contact
 For any inquiries, please contact:
 Email: dongjiale1996@163.com
