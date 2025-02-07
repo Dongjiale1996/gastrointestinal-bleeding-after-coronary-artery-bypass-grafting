@@ -28,7 +28,7 @@ The dataset underwent rigorous preprocessing, including multiple imputation for 
 To enhance model performance, we employed several feature selection techniques:
 - K-Best: Selects features based on statistical tests.
 - LASSO: Uses L1 regularization to identify the most relevant features.
-- Mutual Information: Measures the dependency between features and the target variable.
+- Mutual Information (MI): Measures the dependency between features and the target variable.
 - Recursive Feature Elimination with Random Forest (RFE-RF): Iteratively removes the least important features based on Random Forest importance scores.
 2.3 Model Construction                                                                                                                                                          
 We implemented and compared six supervised machine learning algorithms:
@@ -60,20 +60,22 @@ pip install seaborn==0.12.2;
 pip install scikit-learn-intelex==2023.2.1; 
 pip install sklearnex==0.0.1
 4. Usage
-Step 1: Data Preprocessing                                                                                  
+Step 1: Data Preprocessing                                                                                                                             
 The folder contains scripts for data preprocessing, including normalization and imputing missing values. Run the appropriate scripts for data normalization and imputing missing values.
 Example:                                                                                                                                               
 Navigate to the folder:                                                                                                                                
 cd data_preprocess/                                                                                                                                    
 Run the relevant script, such as:                                                                                                                      
 python data_normalization.py                                                                                                                           
-Step 2: Feature Selection                                                                                                                              The folder contains scripts for various feature selection methods aimed at reducing model complexity and enhancing performance by retaining only the most relevant features. You can run the scripts to apply the following methods: K-Best method, LASSO method, mutual information-based selection, and Recursive Feature Elimination with Random Forest.
+Step 2: Feature Selection                                                                                                                              
+The folder contains scripts for various feature selection methods aimed at reducing model complexity and enhancing performance by retaining only the most relevant features. You can run the scripts to apply the following methods: K-Best method, LASSO method, mutual information-based selection, and Recursive Feature Elimination with Random Forest.
 Example:                                                                                                                                               
 Navigate to the folder:                                                                                                                                
 cd feature_selection/                                                                                                                                  
 Run the script to select the most important features, such as:                                                                                         
 python k_best.py                                                                                                                                       
-Step 3: Model Construction                                                                                                                             The folder contains scripts to train and evaluate various prediction models. You can choose from machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each model has a corresponding training script.
+Step 3: Model Construction                                                                                                                             
+The folder contains scripts to train and evaluate various prediction models. You can choose from machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each model has a corresponding training script.
 Example:                                                                                                                                               
 Navigate to the folder:                                                                                                                                
 cd model_construction/                                                                                                                                 
