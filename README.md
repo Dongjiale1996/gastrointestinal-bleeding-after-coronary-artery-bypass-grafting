@@ -22,7 +22,7 @@ The project structure is as follows:
 ├── requirements.txt         # Project dependencies                                                                                                                             
                                                                                                                   
 3. Methods                                                                                                                                                                      
-2.1 Data Preprocessing                                                                                                                                                          
+2.1 Data Preprocessing                                                                                                                                 
 The dataset underwent rigorous preprocessing, including multiple imputation for handling missing data and normalization to standardize feature scales. These steps ensured the data was suitable for model training and evaluation.
 2.2 Feature Selection                                                                                                                                  
 To enhance model performance, we employed several feature selection techniques:
