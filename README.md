@@ -59,40 +59,28 @@ pip install joblib==1.2.0;
 pip install seaborn==0.12.2; 
 pip install scikit-learn-intelex==2023.2.1; 
 pip install sklearnex==0.0.1
-4. Usage                                                                                                                                                                        
-Step 1: Data Preprocessing
-The folder contains scripts for preprocessing data. This step involves normalizing and imputing missing values. You need to run the following scripts:
-- In the folder, run the script for data normalization (`Data_Normalization/`).
-- In the folder, run the script for imputing missing values (`Multiple_Imputation/`).
+4. Usage
+Step 1: Data Preprocessing                                                                                  
+The folder contains scripts for data preprocessing, including normalization and imputing missing values. Run the appropriate scripts for data normalization and imputing missing values.
 Example:
-1. Navigate to the folder: `data_preprocess/`
-2. Run the relevant script, such as:
-   ```bash
-   python data_normalization.py
-   ```
-Step 2: Feature Selection
-In the folder, you will find scripts for different feature selection methods. Feature selection helps to reduce the complexity of your model and improve its performance by retaining only the most relevant features:
-- Run the scripts in the folder to apply the K-Best method (`K_Best/`).
-- Run the scripts in the folder to apply the LASSO method (`LASSO/`).
-- Run the scripts in the folder for mutual information-based selection (`Mutual_Information/`).
-- Run the scripts in the folder for Recursive Feature Elimination with Random Forest (`RFE_RF/`).
+Navigate to the folder:
+cd data_preprocess/  
+Run the relevant script, such as:
+python data_normalization.py  
+Step 2: Feature Selection                                                                                  
+The folder contains scripts for various feature selection methods aimed at reducing model complexity and enhancing performance by retaining only the most relevant features. You can run the scripts to apply the following methods: K-Best method, LASSO method, mutual information-based selection, and Recursive Feature Elimination with Random Forest.
 Example:
-1. Navigate to the folder: `feature_selection/`
-2. Run the script to select the most important features:
-   ```bash
-   python k_best.py
-   ```
-Step 3: Model Construction
-The folder contains scripts to train and evaluate prediction models. You can choose from various machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each of these models has a corresponding script for training.
-1. Navigate to the `model_construction/` folder.
-2. Run the corresponding script for the desired model:
-   - Logistic Regression: `train_logistic_regression.py`
-   - Multilayer Perceptron (MLP): `train_multilayer_perceptron.py`
-   - Naive Bayes: `train_naive_bayes.py`
-   - Random Forest: `train_random_forest.py`
-   - Support Vector Machine (SVM): `train_support_vector_machine.py`
-   - XGBoost: `train_xgboost.py`
-These scripts will train the model, generate predictions, and evaluate performance based on metrics like AUC and Brier score.
+Navigate to the folder:
+cd feature_selection/  
+Run the script to select the most important features, such as:
+python k_best.py  
+Step 3: Model Construction                                                                                  
+The folder contains scripts to train and evaluate various prediction models. You can choose from machine learning models such as Logistic Regression, Random Forest, XGBoost, Support Vector Machine, Naive Bayes, and Multilayer Perceptron. Each model has a corresponding training script.
+Example:
+Navigate to the folder:
+cd model_construction/  
+Run the corresponding script for the desired model, such as:
+python train_logistic_regression.py  
 5. Contact
 For any inquiries, please contact:
 Email: dongjiale1996@163.com
