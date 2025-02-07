@@ -38,9 +38,9 @@ We implemented and compared six supervised machine learning algorithms:
 - Support Vector Machine (SVM): Effective for high-dimensional spaces, suitable for classification tasks.
 - Naive Bayes (NB): A probabilistic classifier based on Bayes' theorem with strong independence assumptions.
 - Multilayer Perceptron (MLP): A feedforward neural network for supervised learning tasks.
-2.4 Hyperparameter Optimization                                                                                                                                                 
+2.4 Hyperparameter Optimization                                                                                                                        
 Each model underwent hyperparameter tuning using five-fold grid search cross-validation. This process systematically explored hyperparameter combinations to identify the optimal configuration based on performance metrics.
-2.5 Model Evaluation                                                                                                                                                            
+2.5 Model Evaluation                                                                                                                                   
 The final model selection was based on a comprehensive evaluation of the following metrics:
 - Brier Score: Measures the accuracy of predicted probabilities (lower values indicate better performance).
 - AUC-ROC: Evaluates the model's ability to distinguish between classes (higher values indicate better performance).
